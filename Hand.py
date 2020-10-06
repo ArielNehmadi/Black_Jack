@@ -18,10 +18,10 @@ class Hand:
         """
         Prints the current hand and hand sum
         """
-        print(name + ' current hand is: ')
+        print(f'{name} current hand is: ')
         for card in self.my_hand:
             print(card)
-        print(name + ' current hand value is: ' + str(self.hand_value) + ' \n ')
+        print(f'{name} current hand value is: {str(self.hand_value)} \n ')
 
     def is_bust(self):
         """
@@ -46,11 +46,12 @@ class Hand:
 
         """
         # takes from deck and puts in my_hand
-        self.my_hand.append(deck.deal_one())
+        card = deck.deal_one()
+        self.my_hand.append(card)
         # adds the new card value to hand_value
         self.hand_value += self.my_hand[-1].value
         # if new card is an ace adds 1 to self.ace
-        if self.my_hand[-1].value == 11:
+        if self.my_hand[-1].rank == 'Ace':
             self.ace += 1
 
     def stand_or_hit(self, deck, name):

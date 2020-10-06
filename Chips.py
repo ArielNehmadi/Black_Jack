@@ -31,8 +31,8 @@ class Chips:
                     self.bet = bet_amount
                     break
                 else:
-                    print('Not Enough Chips, please enter a number matching your current chips count. \n you have:' +
-                          str(self.total) + 'chips')
+                    print(f'Not Enough Chips, please enter a number matching your current chips count. \n you have: '
+                          f'{str(self.total)} chips')
 
             except:
                 print('Invalid input, Please enter a number: ')
