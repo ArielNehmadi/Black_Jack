@@ -98,8 +98,8 @@ while cash_in and my_player.chips.total != 0:
 
 if my_player.chips.total < 100:
     print('my god you really are an addict ')
-    print(f'you have: {str(my_player.chips.total)} chips')
+    print(f'you have: {my_player.chips.total} chips')
 else:
     print("well you beat a pretty bad computer, I wouldn't brag about that")
-    print(f'you have: {str(my_player.chips.total)} chips')
+    print(f'you have: {my_player.chips.total} chips')
 print('\n Thank you for playing BlackJack')

@@ -21,7 +21,7 @@ class Hand:
         print(f'{name} current hand is: ')
         for card in self.my_hand:
             print(card)
-        print(f'{name} current hand value is: {str(self.hand_value)} \n ')
+        print(f'{name} current hand value is: {self.hand_value} \n ')
 
     def is_bust(self):
         """
