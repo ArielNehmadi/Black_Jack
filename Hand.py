@@ -1,8 +1,6 @@
 # Hand class
 # Attributes - my_hand(an array of the current cards held)
 #            - hand_value : sum of card value
-#            - bust : the player exceeds 21
-#            - stand : the player doesn't hit anymore
 #            - ace : number of aces with an 11 value
 
 
@@ -12,7 +10,6 @@ class Hand:
         self.my_hand = []
         self.hand_value = 0
         self.ace = 0
-        # bust False if the player is still in the round
 
     def print_(self, name):
         """
@@ -63,7 +60,6 @@ class Hand:
         """
         while self.is_bust():
             while True:
-
                 player_input = input("Do you want to hit or stand? (h = hit , s = stand)")
                 if player_input == 'h':
                     self.hit(deck)

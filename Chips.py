@@ -1,7 +1,6 @@
 # Chips class
 # Attributes - total , bet
 # Functions - win_bet , lose_bet , take_bet
-# Comments - fix the take bet function
 class Chips:
 
     def __init__(self):
